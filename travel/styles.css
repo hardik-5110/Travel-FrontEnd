@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* .mulish-<uniquifier> {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+body{
+    font-family: "Mulish", sans-serif;  
+    font-weight: 400;
+}
+
+.navbar-nav .nav-item a{
+    transition: all 0.3s linear;
+}
+.navbar-nav .nav-item a:hover{
+    color: #000;
+}
+.navbar-nav .nav-item .login{
+    background-color: #000 ;
+    color: antiquewhite;
+    border-radius: 16px;
+}
+.navbar-nav .nav-item .login:hover{
+    background: rgb(188, 165, 165);
+    color: antiquewhite;
+ 
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 93vh;
+}
+.content:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 93vh;
+    background: rgba(0, 0, 0, 0.4) url(./assets/b.png);
+    background-size: cover;
+    background-blend-mode: darken;
+    z-index: -1;
+}
+.cont_bx{
+    color: rgb(238, 211, 211);
+}
+.content .cont_bx h1{
+    padding-top: 80px;
+    line-height: 43px;
+}
+.content .cont_bx p{
+    margin-top: 20px;
+    line-height: 40px;
+    margin-bottom: 18px;
+}
+.explore_box .search_box:before {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    opacity: 0;
+}
+.explore_box{
+    color: rgb(238, 211, 211);
+    margin-top: 10rem;
+}
+.search_box{
+    
+    padding: 30px;
+    z-index: 2;
+}
+.search_box:hover{
+    box-shadow: 0 10px 30px 0 rgba(138,155,165,0.15);
+    cursor: pointer;
+}
+.search_box h5{
+    font-size: 15px;
+}
+.search_box p{
+    font-size: 12px;
+}
+.search_box h4{
+    font-size: 18px;
+}
+
+/* offer section */
+
+.tours_offered{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;  
+}
+.tours_offered h1{
+    font-weight: 600;
+    margin: 0; 
+}
+.tours_offered p{
+    font-weight: 500;
+    margin: 0;
+}
+.cards{
+    justify-content: space-evenly;
+}
+.card{
+    margin-top: 80px;
+}
+
+/* destinatin section */
+
+.destination{
+    width: 45%;
+    height: auto;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.destination .des_bx, .img_bx{
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+.destination .des_bx h4{
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+    line-height: 10px;
+    letter-spacing: 1px;
+}
+.destination .des_bx p{
+    font-size: 12px;
+}
+.destination .des_bx li{
+    list-style: none;
+    padding: 0 0 8px 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+.destination .des_bx h6{
+    width: 250px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+.destination .des_bx button{
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #fff;
+    background: #000;
+    border: 2px solid #000;
+    transition: 0.3s linear;
+}
+.destination .des_bx button:hover{
+    background: rgb(168, 151, 151);
+    border: 2px solid rgb(168, 151, 151) ;
+}
+.destination .img_bx img{
+    width: 100%;
+    height: 420px;
+    border-radius: 5px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 25px;
+    line-height: 30px;
+    margin: 0;
+}
+footer p{
+    margin-top: 10px;
+    font-weight: 500;
+    width: 400px;
+    font-size: 13px;
+}
+.form_input{
+    box-shadow: 30px 10px 30px 10px rgba(138,155,165,0.15);
+}
+.form_input input{
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px 0 0 20px;
+}
+.form_input button{
+    padding: 12px 15px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 0 20px 20px 0 ;
+    background: #000;
+    color: white;
+    transition: 0.3s linear;
+}
+.form_input button:hover{
+    background: rgb(188, 165, 165);
+}
+footer ul{
+    list-style: none;
+    margin-top: 30px;
+}
+footer ul li{
+    font-weight: bold;
+    text-align: center;
+    margin-right: 30px;
+}
+footer ul li h6{
+    font-size: 11px;
+    font-weight: 600;
+    max-width: 120px;
+    margin: 0;
+    line-height: 20px;
+    border: 1px solid black;
+    padding-top: 3px;
+}
+.socialsites_links{
+    margin: 20px 0;
+}
+.fa-facebook, .fa-instagram, .fa-dribbble, .fa-pinterest{
+    color:#000;
+}
+.fa-facebook:hover{
+    color: #3b5998;
+}
+.fa-instagram:hover{
+    color: #e4405f;
+}
+.fa-dribbble:hover{
+    color: #ea4c89;
+}
+.fa-pinterest:hover{
+    color: #bd081c;
+}
+
+
+/* responsive */
